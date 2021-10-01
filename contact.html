@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script src="js/contact.js"></script>
+        
         <title>Contact form</title>
     </head>
     <body>
@@ -15,17 +18,20 @@
             <li class="nav"><a href="https://dylkirk23.github.io/CISC474/contact.html">Contact</a></li>
         </ul>
 
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="user_fname"><br><br>
-        <label for="surname">Last Name:</label>
-        <input type="text" id="surname" name="user_lname"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="user_email"><br><br>
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="user_phone"><br><br>
-        <label for="message">Message:</label>
-        <input type="text" id="message" name="user_message"><br><br>
-        <input type="submit" value="submit">
-
+        <form id="contactForm">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="user_fname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="user_lname" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email"><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="user_phone"><br><br>
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="user_message" required><br><br>
+                <button onclick="sendEmail()" type="button">Send</button>
+            </div>
+        </form>
     </body>
 </html>
