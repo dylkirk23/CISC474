@@ -13,6 +13,7 @@ function sendEmail(){
 
     var form = document.getElementById("contactForm");
 
+    //checks for content in required fields
     if(lname != "" && fname != "" && message != ""){
         var info = {
             from_name: fname + " " + lname,
@@ -21,10 +22,11 @@ function sendEmail(){
             from_message: message
         };
 
+        //sends email
         emailjs.send('service_0ayobwc', 'template_7czprs8', info).then(function (res){});
         form.reset();
     }
-
+    //error message if required fields not filled out
     else{
         alert("Please fill out the required fields");
         window.location.reload(false);
