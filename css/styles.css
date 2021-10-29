@@ -63,3 +63,18 @@ body{
 .dropdown:hover .drpcontent{
     display: block;
 }
+
+.info{
+    font-size: 20px;
+}
+.selfie{
+    width: 250px;
+    height: 350px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: cornflowerblue;
+    width: 100%;
+}
