@@ -19,46 +19,48 @@
         <title>Contact form</title>
     </head>
     <body>
-        <!--nav bar-->
-        <div class="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="aboutMe.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a class="active" href="contact.html">Contact</a>
-            <div class="dropdown">
-                <button class="drpbtn">Class Links</button>
-                <div class="drpcontent">
-                    <a href="https://mattm401.github.io/">Course Website</a>
-                    <a href="https://katznoah.github.io">Previous Student</a>
-                    <a href="https://mrpinkpigg.github.io/CISC474/">Next Student</a>
+        <div class="layout">
+            <!--nav bar-->
+            <div class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="contact.html">Contact</a>
+                <div class="dropdown">
+                    <button class="drpbtn">Class Links</button>
+                    <div class="drpcontent">
+                        <a href="https://mattm401.github.io/">Course Website</a>
+                        <a href="https://katznoah.github.io">Previous Student</a>
+                        <a href="https://mrpinkpigg.github.io/CISC474/">Next Student</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!--contact form-->
-        <form id="contactForm">
-            <div>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="user_fname" required><br><br>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="user_lname" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email"><br><br>
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="user_phone"><br><br>
-                <label for="message">Message:</label>
-                <input type="text" id="message" name="user_message" required><br><br>
-                <button onclick="sendEmail()" type="button">Send</button>
-            </div>
-        </form>
-        <footer>
-            <div class="footerClass">
-                <a>My Links</a>
-                <br>
-                <a class="footlink" href="mailto:dylank@udel.edu">Email</a>
-                <br>
-                <a class="footlink" href="https://github.com/dylkirk23">Github</a>
-            </div>
-        </footer>
+            <!--contact form-->
+            <form id="contactForm">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="user_fname" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="user_lname" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email"><br><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="user_phone"><br><br>
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="user_message" required><br><br>
+                    <button onclick="sendEmail()" type="button">Send</button>
+                </div>
+            </form>
+            <footer>
+                <div class="footerClass">
+                    <a>My Links</a>
+                    <br>
+                    <a class="footlink" href="mailto:dylank@udel.edu">Email</a>
+                    <br>
+                    <a class="footlink" href="https://github.com/dylkirk23">Github</a>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

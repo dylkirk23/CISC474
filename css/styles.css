@@ -1,3 +1,9 @@
+.layout{
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif; 
     background-color: lightblue; 
