@@ -4,6 +4,13 @@ body{
     text-align: center;
 }
 
+#splitPage{
+    display: flex;
+}
+
+.splitChild{
+    flex: 1;
+}
 .nav-bar{
     background-color:cornflowerblue;
     overflow: hidden;
@@ -64,12 +71,8 @@ body{
     display: block;
 }
 
-.info{
-    font-size: 20px;
-}
 .selfie{
-    width: 250px;
-    height: 350px;
+    width: 60%
 }
 
 footer{
@@ -77,4 +80,7 @@ footer{
     bottom: 0;
     background-color: cornflowerblue;
     width: 100%;
+}
+.footerClass{
+    padding: 3px;
 }
